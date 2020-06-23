@@ -5,10 +5,16 @@
 
         
         <script>
-        var numbers = [1,2,3,4,5];
-        for (var i = 0; i < numbers.length; i++){
-            alert(numbers[i]);
-        }
+       var student ={
+           firstName : "John",
+           lastName : "Johnson",
+           age : 33,
+           eyeColor : "black"
+       };
+       
+       for (var i in student){
+           console.log(i + " > " + student[i]);
+       }
        
         </script>
     </body>
