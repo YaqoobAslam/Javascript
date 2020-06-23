@@ -9,10 +9,13 @@
                 firstName: "Yaqoob",
                 lastName: "Aslam",
                 age:26,
-                eyeColor: "blue"
+                eyeColor: "blue",
+                fullName: function(){
+                    return this.firstName + " " + this.lastName;
+                }                
             };
 
-            document.getElementById("demo").innerHTML=person.firstName + " " + person.age;
+            document.getElementById("demo").innerHTML=person.fullName();
        
         </script>
     </body>
