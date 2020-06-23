@@ -5,15 +5,13 @@
 
         
         <script>
-       var student ={
-           firstName : "John",
-           lastName : "Johnson",
-           age : 33,
-           eyeColor : "black"
-       };
+       var numbers =[1,2,3,4,5];
        
-       for (var i in student){
-           console.log(i + " > " + student[i]);
+       for (var i =0; i<numbers.length; i++){
+           if( i === 3){
+               break;
+           }
+           alert(numbers[i]);
        }
        
         </script>
