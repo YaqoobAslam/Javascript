@@ -1,6 +1,10 @@
-function func1(a,b,c){
-    console.log(arguments[0]);
-    console.log(arguments[1]);
-    console.log(arguments[2]);
+function longestString(){
+    var longest = '';
+    for (var i=0; i<arguments.length; i++){
+        if(arguments[i].length >longest.length){
+            longest = arguments[i];
+        }
+    }
+    return longest;
 }
-func1(12,33,44);
+
